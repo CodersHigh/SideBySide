@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,27 +18,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Pomodoro_On" translatesAutoresizingMaskIntoConstraints="NO" id="m1J-Si-ZUk" userLabel="Pomodoro_1">
-                                <rect key="frame" x="133" y="290" width="20" height="20"/>
+                                <rect key="frame" x="110" y="290" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="ZOI-cl-9V2"/>
                                     <constraint firstAttribute="width" constant="20" id="xSJ-qJ-DYv"/>
                                 </constraints>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Pomodoro_On" translatesAutoresizingMaskIntoConstraints="NO" id="Jro-PX-Te9" userLabel="Pomodoro_2">
-                                <rect key="frame" x="250" y="290" width="20" height="20"/>
+                                <rect key="frame" x="230" y="290" width="20" height="20"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Pomodoro_On" translatesAutoresizingMaskIntoConstraints="NO" id="Xeo-pr-Vc3" userLabel="Pomodoro_3">
-                                <rect key="frame" x="366" y="290" width="20" height="20"/>
+                                <rect key="frame" x="350" y="290" width="20" height="20"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Pomodoro_On" translatesAutoresizingMaskIntoConstraints="NO" id="EhO-P7-4ui" userLabel="Pomodoro_4">
-                                <rect key="frame" x="483" y="290" width="20" height="20"/>
+                                <rect key="frame" x="470" y="290" width="20" height="20"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="EhO-P7-4ui" firstAttribute="centerY" secondItem="m1J-Si-ZUk" secondAttribute="centerY" id="0OO-cW-Lfc"/>
                             <constraint firstItem="m1J-Si-ZUk" firstAttribute="width" secondItem="Xeo-pr-Vc3" secondAttribute="width" id="0gC-43-lh7"/>
-                            <constraint firstItem="Jro-PX-Te9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="-340" id="3N6-Dx-wHi"/>
+                            <constraint firstItem="Jro-PX-Te9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="2/5" id="3N6-Dx-wHi"/>
                             <constraint firstAttribute="centerY" secondItem="m1J-Si-ZUk" secondAttribute="centerY" id="7xU-M5-6hX"/>
                             <constraint firstItem="m1J-Si-ZUk" firstAttribute="centerY" secondItem="Jro-PX-Te9" secondAttribute="centerY" id="8SE-M5-sV1"/>
                             <constraint firstItem="m1J-Si-ZUk" firstAttribute="height" secondItem="Xeo-pr-Vc3" secondAttribute="height" id="Apg-3j-erf"/>
@@ -46,9 +46,9 @@
                             <constraint firstItem="m1J-Si-ZUk" firstAttribute="centerY" secondItem="Xeo-pr-Vc3" secondAttribute="centerY" id="MOL-L6-7Vf"/>
                             <constraint firstItem="m1J-Si-ZUk" firstAttribute="width" secondItem="Jro-PX-Te9" secondAttribute="width" id="Npj-g5-82y"/>
                             <constraint firstItem="EhO-P7-4ui" firstAttribute="width" secondItem="m1J-Si-ZUk" secondAttribute="width" id="eKa-qS-aIE"/>
-                            <constraint firstItem="m1J-Si-ZUk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="-457" id="fzU-a1-6b8"/>
-                            <constraint firstItem="EhO-P7-4ui" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="-107" id="i9A-IU-wrf"/>
-                            <constraint firstItem="Xeo-pr-Vc3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="-224" id="ibV-7c-hWB"/>
+                            <constraint firstItem="m1J-Si-ZUk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="1/5" id="fzU-a1-6b8"/>
+                            <constraint firstItem="EhO-P7-4ui" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="4/5" id="i9A-IU-wrf"/>
+                            <constraint firstItem="Xeo-pr-Vc3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="3/5" id="ibV-7c-hWB"/>
                             <constraint firstItem="EhO-P7-4ui" firstAttribute="height" secondItem="m1J-Si-ZUk" secondAttribute="height" id="zTX-JJ-Xgw"/>
                         </constraints>
                     </view>
