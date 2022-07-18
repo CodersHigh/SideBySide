@@ -12,18 +12,7 @@
 		2C4BD1FF1B7F1C1100BE2551 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4BD1FD1B7F1C1100BE2551 /* Main.storyboard */; };
 		2C4BD2011B7F1C1100BE2551 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4BD2001B7F1C1100BE2551 /* Images.xcassets */; };
 		2C4BD2041B7F1C1100BE2551 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4BD2021B7F1C1100BE2551 /* LaunchScreen.xib */; };
-		2C4BD2101B7F1C1200BE2551 /* SideBySideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BD20F1B7F1C1200BE2551 /* SideBySideTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2C4BD20A1B7F1C1200BE2551 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2C4BD1EC1B7F1C1100BE2551 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2C4BD1F31B7F1C1100BE2551;
-			remoteInfo = SideBySide;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2C4BD1F41B7F1C1100BE2551 /* SideBySide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideBySide.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,20 +22,12 @@
 		2C4BD1FE1B7F1C1100BE2551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C4BD2001B7F1C1100BE2551 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2C4BD2031B7F1C1100BE2551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		2C4BD2091B7F1C1200BE2551 /* SideBySideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideBySideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4BD20E1B7F1C1200BE2551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C4BD20F1B7F1C1200BE2551 /* SideBySideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBySideTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2C4BD1F11B7F1C1100BE2551 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2C4BD2061B7F1C1200BE2551 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -69,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				2C4BD1F41B7F1C1100BE2551 /* SideBySide.app */,
-				2C4BD2091B7F1C1200BE2551 /* SideBySideTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,24 +112,6 @@
 			productReference = 2C4BD1F41B7F1C1100BE2551 /* SideBySide.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2C4BD2081B7F1C1200BE2551 /* SideBySideTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2C4BD2161B7F1C1200BE2551 /* Build configuration list for PBXNativeTarget "SideBySideTests" */;
-			buildPhases = (
-				2C4BD2051B7F1C1200BE2551 /* Sources */,
-				2C4BD2061B7F1C1200BE2551 /* Frameworks */,
-				2C4BD2071B7F1C1200BE2551 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2C4BD20B1B7F1C1200BE2551 /* PBXTargetDependency */,
-			);
-			name = SideBySideTests;
-			productName = SideBySideTests;
-			productReference = 2C4BD2091B7F1C1200BE2551 /* SideBySideTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -162,10 +124,6 @@
 					2C4BD1F31B7F1C1100BE2551 = {
 						CreatedOnToolsVersion = 6.4;
 					};
-					2C4BD2081B7F1C1200BE2551 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 2C4BD1F31B7F1C1100BE2551;
-					};
 				};
 			};
 			buildConfigurationList = 2C4BD1EF1B7F1C1100BE2551 /* Build configuration list for PBXProject "SideBySide" */;
@@ -173,6 +131,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -182,7 +141,6 @@
 			projectRoot = "";
 			targets = (
 				2C4BD1F31B7F1C1100BE2551 /* SideBySide */,
-				2C4BD2081B7F1C1200BE2551 /* SideBySideTests */,
 			);
 		};
 /* End PBXProject section */
@@ -198,13 +156,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C4BD2071B7F1C1200BE2551 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -217,23 +168,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C4BD2051B7F1C1200BE2551 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2C4BD2101B7F1C1200BE2551 /* SideBySideTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2C4BD20B1B7F1C1200BE2551 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2C4BD1F31B7F1C1100BE2551 /* SideBySide */;
-			targetProxy = 2C4BD20A1B7F1C1200BE2551 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2C4BD1FD1B7F1C1100BE2551 /* Main.storyboard */ = {
@@ -345,6 +280,7 @@
 				INFOPLIST_FILE = SideBySide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -355,40 +291,7 @@
 				INFOPLIST_FILE = SideBySide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		2C4BD2171B7F1C1200BE2551 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SideBySideTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SideBySide.app/SideBySide";
-			};
-			name = Debug;
-		};
-		2C4BD2181B7F1C1200BE2551 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SideBySideTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SideBySide.app/SideBySide";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -411,14 +314,7 @@
 				2C4BD2151B7F1C1200BE2551 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		2C4BD2161B7F1C1200BE2551 /* Build configuration list for PBXNativeTarget "SideBySideTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2C4BD2171B7F1C1200BE2551 /* Debug */,
-				2C4BD2181B7F1C1200BE2551 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
